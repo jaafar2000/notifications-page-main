@@ -1,0 +1,91 @@
+.App {
+  padding: 2rem;
+  margin-top: 3rem;
+  border-radius: 0.5rem;
+  box-shadow: -1px 4px 16px 7px #f7f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--bg-big-card);
+  max-width: 750px;
+}
+@media  screen and (max-width: 375px) {
+  .App {
+    width: 100%;
+  }
+}
+
+.card {
+  display: flex;
+  padding: 1rem 1.2rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+@media  screen and (max-width: 375px) {
+  .card {
+    width: 100%;
+  }
+}
+.card img {
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+}
+
+.info .up {
+  display: flex;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+.info .up span {
+  margin-right: 1rem;
+}
+
+.info .up span:nth-of-type(1) {
+  font-weight: 700;
+}
+.info .up span:nth-child(1):hover,
+.info .up span:nth-child(3):hover {
+  color: rgb(20, 52, 128);
+  cursor: pointer;
+}
+.info .up span:nth-of-type(2) {
+  opacity: 0.8;
+}
+.info .up span:nth-of-type(3) {
+  font-weight: 700;
+  opacity: 0.8;
+}
+.info .up .dot {
+  width: 10px;
+  display: inline-block;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+}
+.info > p {
+  opacity: 0.5;
+  font-size: 1rem;
+}
+.header {
+  margin-bottom: 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header span {
+  margin-left: 1rem;
+  background-color: rgb(20, 52, 128);
+  color: white;
+  padding: 0.3rem 0.5rem;
+  font-size: 1.1rem;
+  border-radius: 0.2rem;
+}
+.header p {
+  cursor: pointer;
+  color: rgb(20, 52, 128);
+}
